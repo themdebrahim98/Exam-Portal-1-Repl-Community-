@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Kalam:wght@300;400&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+body {
+  /* font-family: "Comfortaa", cursive; */
+  /* font-family: "Kalam", cursive; */
+  font-family: "Quicksand", sans-serif;
+  background-color: #e0eaf9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.home .hero {
+  width: 100%;
+  min-height: 450px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #d9edfd;
+}
+
+.home .hero .layer-1 {
+  -webkit-animation: live-motation linear 30s infinite both;
+  animation: live-motation linear 30s infinite both;
+  background: url("../images/layer1.png") 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 145px;
+}
+
+.home .hero .layer-2 {
+  -webkit-animation: live-motation linear 55s infinite both;
+  animation: live-motation linear 55s infinite both;
+  background: url("../images/layer2.png") 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 158px;
+}
+
+.home .hero .layer-3 {
+  -webkit-animation: live-motation linear 75s infinite both;
+  animation: live-motation linear 75s infinite both;
+  background: url("../images/layer3.png") 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 468px;
+}
+
+.home .hero .layer-4 {
+  -webkit-animation: live-motation linear 95s infinite both;
+  animation: live-motation linear 95s infinite both;
+  background: url("../images/layer4.png") 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 311px;
+}
+
+.home .hero .layer-5 {
+  -webkit-animation: live-motation linear 120s infinite both;
+  animation: live-motation linear 120s infinite both;
+  background: url("../images/layer5.png") 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 222px;
+}
+
+.home .hero .bike-1,
+.home .hero .bike-2 {
+  background: url("../images/bike.png") 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 75px;
+}
+
+.home .hero .bike-1 {
+  -webkit-animation: live-bike linear 10s infinite both;
+  animation: live-bike linear 10s infinite both;
+}
+
+.home .hero .bike-2 {
+  -webkit-animation: live-bike linear 15s infinite both;
+  animation: live-bike linear 15s infinite both;
+}
+
+@-webkit-keyframes live-motation {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@keyframes live-motation {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+@-webkit-keyframes live-bike {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+@keyframes live-bike {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+.home .logo {
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  left: 10px;
+  top: 10px;
+}
+.home .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .home .logo img {
+    width: 40px;
+    height: 40px;
+  }
+}

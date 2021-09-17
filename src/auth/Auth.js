@@ -29,10 +29,12 @@ const Auth = () => {
                 </div>
 
                 <div className="panels-container">
-                    <UpBtn  handelClick={handelClick} />
+                    <UpBtn handelClick={handelClick} />
                     <InBtn handelClick={handelClick} />
                 </div>
-            </div>
+            </div> {
+                reset ? <Restpass ResBtn={handleReset} IconButton={IconButton} /> : <SignIn ResBtn={handleReset} IconButton={IconButton} />
+            }
         </div>
     )
 }

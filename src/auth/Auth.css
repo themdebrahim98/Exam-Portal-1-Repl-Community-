@@ -343,6 +343,12 @@ form.sign-in-form {
   }
 }
 
+.sign-up-form .output{
+      width: 358px;
+      font-size: 19px;
+      line-height: 0.8;
+      
+}
 @media (max-width: 768px) {
   form {
     padding: 0 1.5rem;

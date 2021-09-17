@@ -7,6 +7,8 @@ function SignIn({ IconButton, ResBtn }) {
     const passwordRef = useRef()
 
 
+    console.log(emailRef);
+
     return (
         <form className="sign-in-form">
             <h2 className="title">Log in</h2>

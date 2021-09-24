@@ -1,8 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
+
+
+
 
 function QuesTionButton(props) {
+    
+    let keys;
+    let isthere;
+
+     if(props.allSavedData.length!==0){
+        
+        keys = Object.keys(props.allSavedData);
+         
+
+         isthere =  keys.some((qno)=>{
+             return qno===props.qno
+         })
+        
+
+     }
+    
+   
+
+
+
+
     return (
-        <div onClick = {()=>{props.quesTionTab(props._id)}} class="small-box">{props._id}</div>
+      
+        <div style={{ background: isthere? 'green':null }} onClick={() => { props.quesTionTab(props.qno) }} class="small-box">{props.idx}</div>
     )
 }
 
